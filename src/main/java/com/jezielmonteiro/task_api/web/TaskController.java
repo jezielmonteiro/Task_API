@@ -17,7 +17,7 @@ import java.util.UUID;
 public class TaskController {
 
     private final TaskService taskService;
-
+    
     @PostMapping
     public ResponseEntity<Task> create(@Valid @RequestBody TaskRequest request) {
         Task task = taskService.create(
